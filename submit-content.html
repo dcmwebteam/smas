@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="./index.html">
+                <img class="img-chevron" src="./assets/images/header_chevron.png" alt="Stevens Institute of Technology - The Innovation University®">
+                        <img class="img-text" src="./assets/images/stevens_logo_text.png" alt="tevens Institute of Technology - The Innovation University®">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" role="navigation">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./calendar.html">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Instructional Content</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./submit-content.html">Submit Content</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <section id="form-section-before">
+        <div class="container">
+            <div class="row about-header">
+                <div class="col">
+                    <h1><span style="border-right: 1px solid #025679; padding-right:5px; font-size: 2rem; ">SMAS</span>
+                        SUBMIT CONTENT </h1>
+                </div>
+            </div>
+            <div class="row about-header-mobile">
+                    <div class="col">
+                        <div class="row" style="border-bottom: 1px solid #025679; width: 50%;margin:auto; margin-bottom: 2%;">
+                            <div class="col" >
+                                <h2 style=" font-size: 1.5rem; font-weight: 300">SUBMIT CONTENT</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>SMAS</h2>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row shadow p-3 mb-5 bg-white rounded animated bounceInLeft">
+                <div class="row  about-row">
+                    <div class="col">
+                        <h5 class="submit-header-text">Looking to leverage the collective social community?
+                            Have an upcoming event that needs promotion?
+                            Provide us the details and we’ll consider it
+                            for addition to the @SMAS central account content calendars.</h5>
+                    </div>
+                </div>
+                <div class="row form-section-row " >
+                    <div class="col">
+                        <form id="form">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>About You</h4>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name_input"><strong>Name <span style="color:red;">*</span></strong></label>
+                                    <input type="text" class="form-control" id="name_input" placeholder="Name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email_input"><strong>Email <span style="color:red;">*</span></strong></label>
+                                    <input type="email" class="form-control" id="email_input" placeholder="Email"
+                                        required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="twitter_input"><strong>Twitter</strong></label>
+                                    <input type="text" class="form-control" id="twitter_input" placeholder="@...">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="instagram_input"><strong>Instagram</strong></label>
+                                    <input type="text" class="form-control" id="instagram_input" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone_input"><strong>Phone</strong></label>
+                                    <input type="text" class="form-control" id="phone_input"  placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for=""><strong>Affiliation <span style="color:red;">*</span></strong></label>
+                                    <div class="form-check">
+                                        
+                                        <label class="form-check-label" for="faculty_input_radio">
+                                                <input class="form-check-input" type="radio" name="affiliation" id="faculty_input_radio"
+                                                value="faculty" required>Faculty / Staff
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        
+                                        <label class="form-check-label" for="student_input_radio">
+                                                <input class="form-check-input" type="radio" name="affiliation" id="student_input_radio"
+                                                value="student" required>Student
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        
+                                        <label class="form-check-label" for="fan_input_radio">
+                                                <input class="form-check-input" type="radio" name="affiliation" id="fan_input_radio"
+                                                value="fan" required>Fan
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        
+                                        <label class="form-check-label" for="other_input_radio">
+                                                <input class="form-check-input" type="radio" name="affiliation" id="other_input_radio"
+                                                value="other" required>Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for=""><strong>What would you like to promote? <span style="color:red;">*</span></strong></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="promote" id="event_promote_radio"
+                                            value="event" required>
+                                        <label class="form-check-label" for="event_promote_radio">
+                                            Event
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="promote" id="content_promote_radio"
+                                            value="content" required>
+                                        <label class="form-check-label" for="content_promote_radio">
+                                            Content (e.g. photo,video, news/feature story)
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <hr>
+                                    <h4>Content Details</h4>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for=""><strong>Where do you suggest publishing your item?</strong></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="facebook" id="facebook_input_checkbox">
+                                        <label class="form-check-label" for="facebook_input_checkbox">
+                                            Facebook
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="twitter" id="twitter_input_checkbox">
+                                        <label class="form-check-label" for="twitter_input_checkbox">
+                                            Twitter
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="instagram" id="instagram_input_checkbox">
+                                        <label class="form-check-label" for="instagram_input_checkbox">
+                                            Instagram
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="content_comment_input"><strong>Content / Comments <span style="color:red;">*</span></strong></label>
+                                    <textarea class="form-control" id="content_comment_input" rows="3" required></textarea>
+                                </div> 
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div id="dropbox">
+                                        <div class="my-form">
+                                            <input type="file" id="fileElem" multiple accept="image/*" style="display:none"
+                                                onchange="handleFiles(this.files)">
+                                            <a href="#" id="fileSelect">
+                                                <div class="form_line">
+                                                    <div class="form_controls">
+
+                                                        <div class="upload_button_holder">
+                                                            <i class="fa fa-upload fa-3x">
+                                                                <h3>Drop a file here or click to upload</h3>
+                                                            </i>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="gallery">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="progress-bar" id="progress-bar">
+                                        <div class="progress" id="progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="authorize_input_checkbox"
+                                            required>
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            I authorize Stevens Department of Social Media to
+                                            publish my
+                                            photos,
+                                            videos,
+                                            or other submitted materials on any of their social media channels or
+                                            website,
+                                            or for
+                                            promotional purposes.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="text-align: center;">
+                                    <button id="submit-form" type="submit" class="btn btn-secondary">Submit</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="successfull-response">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="alert alert-success" role="alert">
+                        Your responses were successfully submitted. Thank you!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+                <div class="modal-body">
+                    <p> Your responses were successfully submitted. Thank you!</p>
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/Stevens1870" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/FollowStevens" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/followstevens/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/EdwinAStevens70" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/school/stevens-institute-of-technology/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+
+    <!-- <nav id="secondNav" class="navbar  navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="./index.html">
+                <img class="img-chevron" src="./assets/images/header_chevron.png" alt="Stevens Institute of Technology - The Innovation University®">
+                <img class="img-text" src="./assets/images/stevens_logo_text.png" alt="tevens Institute of Technology - The Innovation University®">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto" role="navigation">
+            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./calendar.html">Calendar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Instructional Content</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="./submit-content.html">Submit Content</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        </nav> -->
+
+    <!-- /////////////Footer section////////////// -->
+
+    <footer id="mainFooter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img class="footer-img" src="./assets/images/footer_new.jpg" alt="">
+                    <p>A premier, private research university just minutes from New York City with an incredible view
+                        and exceptional access to opportunity</p>
+                    <p class="copyright">© 2018 Stevens Institute of Technology. All Rights Reserved. <a href="https://www.stevens.edu/privacypolicy">Privacy&nbsp;Policy</a></p>
+                </div>
+                <div class="col-8">
+                    <hr style="background-color: #A60B35; height: 3px; margin-bottom: 2rem">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer_heading">OUR LOCATION</div>
+                            <p>Stevens Institute of Technology</p>
+                            <p>1 Castle Point Terrace<br>Hoboken, NJ 07030</p>
+                        </div>
+                        <div class="col">
+                            <div class="footer_heading">GET IN TOUCH</div>
+                            <a class="footer_contact_link" href="tel:+12012165000"><i class="fa fa-mobile footer-icon"></i></i>201.216.5000</a>
+
+                        </div>
+                        <div class="col">
+                            <div class="footer_heading">SOCIAL MEDIA</div>
+                            <a class="footer_contact_link" href="https://www.facebook.com/Stevens1870"><i class="fa fa-facebook footer-icon"></i>Facebook</a><br>
+                            <a class="footer_contact_link" href="https://twitter.com/FollowStevens"><i class="fa fa-twitter footer-icon"></i>Twitter</a><br>
+                            <a class="footer_contact_link" href="https://www.instagram.com/followstevens/"><i class="fa fa-instagram footer-icon"></i>Instagram</a><br>
+                            <a class="footer_contact_link" href="https://www.youtube.com/user/EdwinAStevens70"><i class="fa fa-youtube footer-icon"></i>Youtube</a><br>
+                            <a class="footer_contact_link" href="https://www.linkedin.com/school/stevens-institute-of-technology/"><i
+                                    class="fa fa-linkedin footer-icon"></i>Linkedin</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer id="mobileFooter" style="margin-top:15%; padding-bottom: 10px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col" style="margin-bottom:7%;">
+                        <div class="footer_heading">OUR LOCATION</div>
+                            <p>A premier, private research university just minutes from New York City with an incredible view
+                                        and exceptional access to opportunity</p>
+                            <img class="footer-img" src="./assets/images/footer_new.jpg" alt="Stevens Footer Image">
+                            <p>Stevens Institute of Technology</p>
+                            <p>1 Castle Point Terrace<br>Hoboken, NJ 07030</p>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col" style="margin-bottom:7%;">
+                        <div class="footer_heading">GET IN TOUCH</div>
+                        <a class="footer_contact_link" href="tel:+12012165000"><i class="fa fa-mobile footer-icon"></i></i>201.216.5000</a>
+                
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="footer_heading">SOCIAL MEDIA</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                                    
+                        <a class="footer_contact_link" href="https://www.facebook.com/Stevens1870"><i class="fa fa-facebook footer-icon"></i>Facebook</a><br>
+                        <a class="footer_contact_link" href="https://twitter.com/FollowStevens"><i class="fa fa-twitter footer-icon"></i>Twitter</a><br>
+                        <a class="footer_contact_link" href="https://www.instagram.com/followstevens/"><i class="fa fa-instagram footer-icon"></i>Instagram</a><br>
+                    </div>
+                    <div class="col">
+                        <a class="footer_contact_link" href="https://www.youtube.com/user/EdwinAStevens70"><i class="fa fa-youtube footer-icon"></i>Youtube</a><br>
+                        <a class="footer_contact_link" href="https://www.linkedin.com/school/stevens-institute-of-technology/"><i class="fa fa-linkedin footer-icon"></i>Linkedin</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container-fluid" style="padding-right:0;padding-left:0;margin-right:0;margin-left:0; margin-top:10%">
+                <div class="row" style="background-color:#e1e1e1;">
+                    <div class="col">
+                        <p class="copyright">© 2018 Stevens Institute of Technology. All Rights Reserved. <a href="https://www.stevens.edu/privacypolicy">Privacy&nbsp;Policy</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+    </footer>
+   
+</body>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+<script src="./assets/js/submit-content.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script src="./assets/js/general.js"></script>
+
+</html>
